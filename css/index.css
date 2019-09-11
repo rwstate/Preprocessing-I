@@ -234,6 +234,11 @@ address {
   justify-content: space-between;
   margin: 10% 18%;
 }
+@media (max-width: 500px) {
+  .right-side {
+    height: 80vh;
+  }
+}
 .right-side section div {
   margin-top: 2%;
   margin-bottom: 4%;

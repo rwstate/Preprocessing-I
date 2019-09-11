@@ -55,21 +55,13 @@ table {
 
 @import url('https://fonts.googleapis.com/css?family=Cinzel|Cormorant+Garamond&display=swap');
 
-.header-font() {
-	font-family: 'Cinzel', serif;
-}
+@header-font: 'Cinzel', serif;
 
-.main-font() {
-	font-family: 'Cormorant Garamond', serif;
-}
+@main-font: 'Cormorant Garamond', serif;
 
-.left-color() {
-	color: white;
-}
+@left-color: white;
 
-.right-color() {
-	color:#484848;
-}
+@right-color: #484848;
 
 html, body {
 	@media(min-width:501px) {
@@ -84,18 +76,18 @@ html {
 h1 {
 	font-size: 6rem;
 	font-weight: 600;
-	.header-font();
+	font-family: @header-font;
 }
 
 h2 {
 	font-size: 3rem;
 	font-weight: 600;
-	.header-font();
+	font-family: @header-font;
 }
 
 h3 {
 	font-size: 2rem;
-	.main-font();
+	font-family: @main-font;
 }
 
 body {
@@ -114,7 +106,7 @@ li {
 p, ul, address {
 	line-height: 1.5;
 	font-size: 1.6rem;
-	.main-font;
+	font-family: @main-font;
 }
 
 .flex-column-between() {
@@ -128,7 +120,7 @@ p, ul, address {
 }
 
 .left-side {
-	.left-color();
+	color: @left-color;
 	background-color: salmon;
 	width: 40%;
 	height: 100%;
@@ -154,8 +146,8 @@ p, ul, address {
 			a {
 			text-decoration: none;	
 			font-size: 1.4rem;
-			.left-color();
-			.header-font();
+			color: @left-color;
+			font-family: @header-font;
 
 			}
 
@@ -182,9 +174,13 @@ p, ul, address {
 	}
 }
 .right-side {
-	.right-color();
+	color:  @right-color;
 	.flex-column-between();
 	margin: 10% 18%;
+
+	@media(max-width:500px) {
+		height: 80vh;
+	}
 
 	section {
 
