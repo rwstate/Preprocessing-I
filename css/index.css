@@ -1,1 +1,258 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Cormorant+Garamond&display=swap');
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+@media (min-width: 501px) {
+  html,
+  body {
+    height: 100%;
+  }
+}
+html {
+  font-size: 62.5%;
+}
+h1 {
+  font-size: 6rem;
+  font-weight: 600;
+  font-family: 'Cinzel', serif;
+}
+h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: 'Cinzel', serif;
+}
+h3 {
+  font-size: 2rem;
+  font-family: 'Cormorant Garamond', serif;
+}
+body {
+  display: flex;
+}
+@media (max-width: 500px) {
+  body {
+    flex-direction: column;
+  }
+}
+li {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+p,
+ul,
+address {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  font-family: 'Cormorant Garamond', serif;
+}
+.left-side {
+  color: white;
+  background-color: salmon;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .left-side {
+    width: 100%;
+    height: 70vh;
+    justify-content: space-around;
+  }
+}
+.left-side .left-top {
+  margin-top: 20%;
+  text-align: center;
+  height: 14%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.left-side .left-top nav {
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.left-side .left-top nav a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: white;
+  font-family: 'Cinzel', serif;
+}
+.left-side .left-top nav a:hover {
+  color: grey;
+}
+.left-side .left-bottom {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 10%;
+  margin-bottom: 20%;
+}
+.left-side .left-bottom section h2 {
+  margin-bottom: 5%;
+}
+@media (max-width: 500px) {
+  .left-side .left-bottom section {
+    margin-bottom: 4%;
+  }
+}
+.right-side {
+  color: #484848;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10% 18%;
+}
+@media (max-width: 500px) {
+  .right-side {
+    height: 80vh;
+  }
+}
+.right-side section div {
+  margin-top: 2%;
+  margin-bottom: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.right-side section div .sub-header1 {
+  font-weight: 600;
+  margin-bottom: 2%;
+}
+.right-side section div ul {
+  margin-top: 2%;
+}
+.right-side .right-bottom ul {
+  margin-top: 3%;
+}
